@@ -1,7 +1,5 @@
 import React from "react";
 import HeroBanner from "../components/HeroBanner";
-// import "./../styles/HomePage.css";
-import banners from "../components/Banner";
 import PromoBanner from "../components/PromoBanner";
 const HomePage = () => {
   return (
