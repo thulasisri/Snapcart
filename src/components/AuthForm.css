@@ -1,0 +1,146 @@
+
+.auth-container h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  position: relative;
+}
+
+/* Optional: subtle underline effect */
+.auth-container h3::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #6c63ff;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.auth-container {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow:
+    4px 4px 15px rgba(0, 0, 0, 0.9),
+    -4px -4px 20px rgba(255, 255, 255, 0.7);
+  max-width: 420px;
+  width: 100%;
+  margin: 60px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-container:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    8px 8px 20px rgba(0, 0, 0, 0.12),
+    -4px -4px 20px rgba(255, 255, 255, 0.8);
+}
+
+.auth-container h2 {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.auth-form input {
+  width: 100%;
+  padding: 14px 120px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 15px;
+  background-color: #f9f9f9;
+  transition: border 0.2s ease;
+}
+
+.auth-form input:focus {
+  border-color: #6c63ff;
+  background-color: #fff;
+  outline: none;
+}
+
+/* Button styling */
+.auth-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: teal;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.auth-form button:hover {
+  background-color: #554fe8;
+}
+
+/* Link section */
+.auth-links {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.auth-links a {
+  color: #6c63ff;
+  text-decoration: none;
+  gap: 40px;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.auth-links a:hover {
+  text-decoration: none;
+  color: slateblue;
+}
+/* Sign Up Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #6c63ff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #554fe8;
+  transform: scale(1.02);
+}
+
+/* Login Text Under Button */
+.auth-container p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+/* Login Link */
+.auth-container p a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 150px;
+  margin-bottom: 20px;
+}
+
+.auth-container p a:hover {
+  text-decoration: underline;
+}
+

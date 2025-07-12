@@ -1,0 +1,22 @@
+.category-container {
+  padding: 0px;
+}
+
+.category-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px; /* space between cards */
+  padding: 20px;
+}
+
+
+.no-products-text {
+  font-size: 18px;
+  color: #888;
+  margin-top: 20px;
+}

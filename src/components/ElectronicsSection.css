@@ -1,0 +1,69 @@
+.electronics-section {
+  padding: 2rem 1rem;
+  background-color: #fdfdfd;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.product-grid {
+  display: grid;
+ grid-template-columns: repeat(5, 1fr); /* exactly 5 columns */
+  gap: 1.5rem;
+  padding: 1rem;
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  max-width: 220px;
+  width: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 0.75rem;
+}
+
+.product-info h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+}
+
+.product-price {
+  font-size: 0.95rem;
+  color: #009688;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .product-image {
+    height: 140px;
+  }
+}

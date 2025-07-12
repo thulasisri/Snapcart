@@ -1,0 +1,276 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  background-color: #088F8F;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Reset some default styles */
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 100;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+.icon-label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 1;
+}
+
+
+
+.hover-img {
+  position: absolute;
+  bottom: -20px;
+  left: 48%;
+  transform: translateX(-50%);
+  width: 80px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  /* stays under the text */
+  pointer-events: none;
+  /* avoids interfering with mouse events */
+}
+
+.navbar li:hover .hover-img {
+  opacity: 1;
+}
+
+
+.navbar li:hover .hover-img {
+  display: block;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-search input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-icon-btn {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-icon-btn:hover {
+  background-color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+.active-link {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Mobile menu icon */
+.mobile-menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    display: none;
+  }
+
+  ul.open {
+    display: flex;
+  }
+
+  .navbar-search {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}
+
+.active-link {
+
+  font-weight: bold;
+text-decoration: none;
+}
+
+.logo {
+  height: 50px;
+  width: 100px;
+  border: 2px solid teal;
+}
+
+.navbar-logo {
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  color: white;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 1.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* spacing between icon and text */
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: black;
+}
+
+/* ===== Search Bar ===== */
+.navbar-search {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  gap: 0.1rem;
+}
+
+.navbar-search input {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.search-icon-btn {
+  background-color: teal;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.mobile-menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 1px 10px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+    display: none;
+  }
+
+  .navbar-links li {
+    justify-content: center;
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .navbar-search {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    color: white;
+  }
+}
