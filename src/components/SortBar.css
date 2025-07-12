@@ -16,3 +16,20 @@
   border: 1px solid #ccc;
   font-size: 14px;
 }
+@media (max-width: 780px) {
+  .sort-bar {
+    flex-direction: start;
+    align-items: right;
+    gap: 8px;
+    padding: 1px 16px;
+  }
+
+  .sort-bar label {
+    font-size: 15px;
+  }
+
+  .sort-bar select {
+    width: 50%;
+    font-size: 14px;
+  }
+}

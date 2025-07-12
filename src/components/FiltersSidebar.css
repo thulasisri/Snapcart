@@ -1,6 +1,6 @@
 .filters-sidebar {
   width: 240px;
-  background-color: #ffffff;
+  background-color: gray;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -37,4 +37,39 @@
 
 .filters-sidebar input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+@media (max-width: 780px) {
+  .filters-sidebar {
+    width: 30%;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: whitesmoke ;
+  }
+
+  .filters-sidebar h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+    justify-content: center;
+  }
+
+  .filters-sidebar label {
+    font-weight: 600;
+    margin-top: 8px;
+    font-size: 14px;
+  }
+
+  .filters-sidebar select,
+  .filters-sidebar input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    font-size: 14px;
+  }
+
+  .filters-sidebar input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 8px;
+  }
 }

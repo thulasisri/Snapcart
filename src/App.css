@@ -1,21 +1,66 @@
-/* App.css */
 
-/* Global font style */
-.font-sans {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9fafb; /* Light background for a clean layout */
-  margin: 0;
-  padding: 0;
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
   min-height: 100vh;
 }
 
-/* Optional: Ensure all elements have consistent box sizing */
-* {
-  box-sizing: border-box;
+/* Allow smooth transitions and navigation effects */
+html {
+  scroll-behavior: smooth;
 }
 
-/* Add base styling to body to ensure the app is full height */
-body {
-  margin: 0;
-  padding: 0;
+/* ===== App Container ===== */
+.font-sans {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== Page Content (between navbar & footer) ===== */
+main {
+  flex: 0;
+  padding: 24px;
+}
+
+/* ===== Global Utility Classes ===== */
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* ===== Responsive Container (optional for centering content) ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ===== Responsive Utilities ===== */
+@media (max-width: 780px) {
+  main {
+    padding: 16px 12px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 16px;
+  }
 }

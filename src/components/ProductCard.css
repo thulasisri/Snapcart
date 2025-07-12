@@ -61,3 +61,34 @@
 .card-container .button:hover {
   background-color: #005f87;
 }
+
+@media (max-width: 780px) {
+  .card-container {
+    max-width: 100%;
+    padding: 12px;
+    margin: 0px auto;
+  }
+
+  .image {
+    width: 100px;
+    height: 10px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .rating {
+    font-size: 13px;
+  }
+
+  .button {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+  }
+}

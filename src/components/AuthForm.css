@@ -144,3 +144,29 @@ button[type="submit"]:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 780px) {
+  .auth-container {
+    width: 90%;
+    margin: 40px auto;
+    padding: 24px;
+  }
+
+  .auth-container h2 {
+    font-size: 20px;
+  }
+
+  .auth-container h3 {
+    font-size: 16px;
+  }
+
+  .auth-form input,
+  .auth-form button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .auth-links {
+    font-size: 13px;
+  }
+}
+

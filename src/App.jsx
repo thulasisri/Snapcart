@@ -1,9 +1,8 @@
 import React from 'react';
-import { Router,Routes, Route } from "react-router-dom";
+import { Router, Routes, Route } from "react-router-dom";
 import './App.css';
 
 import Navbar from './components/Navbar';
-// import Banner from './components/Banner';
 import CategoryPage from "./Pages/CategoryPage";
 import Home from './Pages/Home';
 import ShopPage from './Pages/ShopPage';
@@ -17,9 +16,8 @@ function App() {
   return (
     <div className="font-sans">
       <Navbar />
-   
-      {/* <Banner /> */}
- 
+
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
@@ -30,7 +28,7 @@ function App() {
         <Route path="/cart" element={<CartPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/checkout" element={<CheckoutPage/>} />
+        <Route path="/checkout" element={<CheckoutPage />} />
 
       </Routes>
 
